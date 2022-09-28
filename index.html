@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Amazin</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Contact Amazin</h1>
+        </header>
+
+        <form action="./thankyou.html" method="post" name="lab3-contact">
+            <fieldset>
+                <legend>Your information</legend>
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name" required maxlength="50" minlength="1"
+                        placeholder="Biff Jezos">
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="text" name="email" id="email" maxlength="50" minlength="1"
+                        placeholder="biff@amazin.com">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label><br>
+                    <input type="text" name="phone" id="phone" maxlength="50" minlength="1"
+                        placeholder="(123) 456-7890">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <div>
+                    <label for="subject">Subject of your message:</label><br>
+                    <select name="subject" id="subject" required>
+                        <option>Select a message type...</option>
+                        <option value="money">Give us money</option>
+                        <option value="award">Give us awards</option>
+                        <option value="employment">Apply to work for Amazin</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Your message</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </main>
+
+</body>
+
+</html>
